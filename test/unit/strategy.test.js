@@ -522,15 +522,17 @@ describe('index test', function () {
             on,
           });
 
-        const fn = (req, res, err, ...args) => {
+        const fn = function (req, res, err) {
+          const args = Array.prototype.slice.call(arguments);
 
+          args.splice(0, 3);
+
+          expect(err).to.be.equal('err');
           expect(req).to.be.equal('req');
           expect(res).to.be.equal('res');
-          expect(err).to.be.equal('err');
           expect(args).to.be.eql([]);
 
           done();
-
         };
 
         expect(obj.uncaughtException(fn)).to.be.equal(obj);
