@@ -1,0 +1,30 @@
+language: node_js
+
+node_js:
+- '7'
+- '6'
+- '5'
+- '4'
+
+matrix:
+  fast_finish: true
+
+sudo: false
+
+deploy:
+  provider: npm
+  email: simon@simonemms.com
+  api_key:
+    secure: jH1cjb0M5xIlf8oay9kDT1OS1cCE7BILQi2aKQrZjU4uv6yXOhGSYVvP8TFwK8dZdvE3rogWZATcsxBP7bO0ptkSTIocQ2U9MydRjKZOpg7z8wEVwSwzhUSOQuksP9WsGvpWu7M7GEv8ctio6eIf5zsFxKmrH7FlUoEn7kSnXoSpP9bs+aVxwNTGP5TkqryrnKxBjdD8id9QOP+lYwwlFcbQ8/i/9lI98qJT1pnDK6gXJE1q8iwoWSSnrHddsoNgYmZ6XfHtcI+ka0WBHI0uuIRWwwgpJx3srYAm7eUgEzg84IGBtgSLKDCpkU4oL6W9NNKdvTMTiBV575SS8jdAfyuPtzP8zk2n9BSxLsjckadQ14i6ss9e5S1UrudDyVAOEy5ZM0aZf1dsjrL6GsNLNs6NBSG+54XK28CKbFrt7gjNnJzEQSum+7eqlMQSC+VrHOzy9xKHI17hiMjnbawFoK6bk1+MVJyLr2gxDN8kcMglemNK/podZUHxajDVXdgTrO83pmTTw9LMNNOryKUZXXcVdH65X9Ya/cSOxoZ48y9WUfmVXuUzuVuGQkPnlEsxDnVSwyU0NCJ2+eH6TrUeUwSTAf+aUXOhWnl0hOLBeQAXnfKyolUnpYaUOfLw8Shb+pVyMOu56120Nu2+R+y9/u6cjRjSYk/vdeF8uxa9VfQ=
+  on:
+      all_branches: true
+      tags: true
+      repo: steeplejack-js/restify
+
+notifications:
+  webhooks:
+    urls:
+    - https://webhooks.gitter.im/e/d048e712b735c6cb4cf2
+    on_success: change
+    on_failure: always
+    on_start: false
