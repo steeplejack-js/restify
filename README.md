@@ -4,7 +4,7 @@
 
 # Usage
 
-In your [Steeplejack](http://getsteeplejack.com) bootstrapping, you'll need to import this Express plugin into the
+In your [Steeplejack](http://getsteeplejack.com) bootstrapping, you'll need to import this Restify plugin into the
 `modules` section:
 
 ### app.js
@@ -51,7 +51,7 @@ exports.inject = {
 };
 ```
 
-The `steeplejack-restify` dependency exposes two elements, `Restify` (the strategy) and `restifyLib` (the express 
+The `steeplejack-restify` dependency exposes two elements, `Restify` (the strategy) and `restifyLib` (the restify 
 library).
 
 # License
