@@ -1,6 +1,6 @@
 # Steeplejack Restify
 
-[Restify](http://restify.com) strategy for [Steeplejack](http://steeplejack.info)
+[Restify](http://restify.com) strategy for [Steeplejack](http://getsteeplejack.com)
 
 # Usage
 
