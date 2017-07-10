@@ -95,7 +95,7 @@ describe('index test', function () {
             httpsServerOptions: undefined,
             key: undefined,
             log: undefined,
-            name: undefined,
+            name: 'steeplejack-app',
             spdy: undefined,
             version: undefined,
           });
@@ -121,7 +121,7 @@ describe('index test', function () {
             httpsServerOptions: undefined,
             key: undefined,
             log: undefined,
-            name: undefined,
+            name: 'steeplejack-app',
             spdy: undefined,
             version: undefined,
           });

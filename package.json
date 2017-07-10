@@ -24,7 +24,7 @@
     "eslint-plugin-react": "^6.10.3",
     "mocha": "^3.3.0",
     "proxyquire": "^1.7.11",
-    "restify": "^4.3.0",
+    "restify": "^5.0.0",
     "semistandard": "^11.0.0",
     "sinon": "^2.2.0",
     "sinon-chai": "^2.10.0",

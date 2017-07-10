@@ -33,7 +33,7 @@ class Restify extends EventEmitter {
       httpsServerOptions: opts.httpsServerOptions,
       key: opts.key,
       log: opts.log,
-      name: opts.name,
+      name: opts.name || 'steeplejack-app',
       spdy: opts.spdy,
       version: opts.version,
     });
